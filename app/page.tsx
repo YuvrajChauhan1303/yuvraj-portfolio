@@ -58,6 +58,17 @@ export default function Home() {
               <span className="font-bold">Note</span>: The portfolio is still
               under development and will be completed shortly.
             </p>
+            {/* Button to Download Resume */}
+
+            <div className="mt-8">
+              <a
+                target="_blank"
+                className=" border-2 border-black px-4 py-2 hover:bg-black hover:text-white duration-300 transition font-bold"
+                href="/Resume.pdf"
+              >
+                Open Resume
+              </a>
+            </div>
           </div>
 
           {/* Right (Image) */}
