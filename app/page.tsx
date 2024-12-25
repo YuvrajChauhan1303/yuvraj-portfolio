@@ -61,13 +61,13 @@ export default function Home() {
           </div>
 
           {/* Right (Image) */}
-          <div className="w-full md:w-[40%] flex justify-center">
+          <div className="w-full flex justify-center">
             <Image
               src="/images/yuvraj.jpg"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               alt="a graphical representation of a picsart"
-              className="object-cover w-[90%] max-w-md"
+              className="object-contain"
             />
           </div>
         </div>
@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* Work / Experience Section */}
       <div
-        className="flex flex-col border-t-black border border-dashed"
+        className="flex flex-col border-t-black border-b-black border border-dashed"
         ref={workRef}
       >
         <h1 className="text-center text-4xl font-mono mt-12 mb-4">
@@ -103,10 +103,15 @@ export default function Home() {
       </div>
 
       {/* skills */}
-      <div className="h-screen">
-        <Skill title="tools & technologies" items={toolData} />
-        <Skill title="Languages" items={languageData} />
-        <Skill title="Interests" items={interestData} />
+      <div className="flex flex-col">
+        <h1 className="text-center text-4xl font-mono mt-12 mb-4">
+          relevant skills
+        </h1>
+        <div className="overflow-x-hidden">
+          <Skill title="tools & technologies" items={toolData} />
+          <Skill title="Languages" items={languageData} />
+          <Skill title="Interests" items={interestData} />
+        </div>
       </div>
     </div>
   );

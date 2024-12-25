@@ -4,8 +4,8 @@ export const toolData = [
   { text: "React.js" },
   { text: "Tailwind CSS" },
   { text: "Django" },
-  { text: "Django REST Framework" },
   { text: "Express.js" },
+  { text: "Zod" },
   { text: "Vite" },
   { text: "Git" },
   { text: "GitHub" },
@@ -20,7 +20,6 @@ export const toolData = [
   { text: "Axios" },
   { text: "Mongoose ODM" },
   { text: "AuthJS" },
-  { text: "Zod" },
   { text: "CORS" },
   { text: "Shadcn" },
 ];
@@ -36,4 +35,5 @@ export const interestData = [
   { text: "Data Structures & Algorithms" },
   { text: "Full Stack Web Development" },
   { text: "Artificial Intelligence" },
+  { text: "Cryptography & Cyber Security" },
 ];
