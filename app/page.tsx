@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { GoArrowDown } from "react-icons/go";
 import Work from "./_components/Work";
+import { workData } from "./_components/_data/work";
 
 export default function Home() {
   const workRef = useRef<HTMLDivElement | null>(null);
@@ -22,8 +23,8 @@ export default function Home() {
       <div>
         <div className="w-screen flex h-[90vh]">
           {/* left */}
-          <div className="md:w-[60%] flex flex-col justify-center md:px-[10rem]">
-            <h1 className="md:text-[3.5rem] md:mb-3 font-[family-name:var(--font-geist-mono)]">
+          <div className="md:w-[62%] flex flex-col justify-center md:px-[10rem]">
+            <h1 className="md:text-[3.5rem] md:mb-3 font-[family-name:var(--font-geist-mono)] flex flex-row gap-4">
               <span className="">yuvraj</span> <span className="">chauhan</span>
             </h1>
             <p className="font-medium">
@@ -46,6 +47,10 @@ export default function Home() {
                   IIIT Vadodara, ICD
                 </Link>{" "}
               </span>
+            </p>
+            <p className="mt-8">
+              <span className="font-bold">Note</span>: The portfolio is still
+              under development and will be completed shortly.
             </p>
           </div>
           {/* right */}
@@ -73,42 +78,18 @@ export default function Home() {
         </div>
       </div>
 
-      {/* content */}
-      <div className="flex flex-col" ref={workRef}>
+      {/* work / experience */}
+      <div
+        className="flex flex-col border-t-black border border-dashed"
+        ref={workRef}
+      >
         <h1 className="text-center text-4xl font-mono mt-12 mb-4">
           relevant works / experience
         </h1>
-        <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 justify-items-center">
-          <Work
-            duration="September - December 2024"
-            location="Dhankhar Technologies Pvt. Ltd."
-            type="Remote Internship"
-            role="Web Developer"
-            image="/images/icd.png"
-            alt="image related to TAship"
-            bg="bg-blue-50"
-            href=""
-          />
-          <Work
-            duration="August - December 2024"
-            location="IIIT Vadodara - ICD"
-            type="Teaching Assistant"
-            role="Physics"
-            image="/images/icd.png"
-            alt="image related to TAship"
-            bg="bg-red-50"
-            href=""
-          />
-          <Work
-            duration="July 2023 - March 2024"
-            location="SAC, IIIT Vadodara - ICD"
-            type="Technical Committee"
-            role="Member"
-            image="/images/icd.png"
-            alt="image related to TAship"
-            bg="bg-green-50"
-            href=""
-          />
+        <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-20 p-6 justify-items-center ">
+          {workData.map((work, index) => (
+            <Work key={index} {...work} />
+          ))}
         </div>
       </div>
     </div>

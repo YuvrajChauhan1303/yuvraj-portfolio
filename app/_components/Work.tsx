@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface WorkProps {
+export interface WorkProps {
   duration: string;
   location: string;
   image: string;
@@ -45,7 +45,10 @@ const Work = ({
       <p className="px-4 text-lg font-[family-name:var(--font-roboto-condensed)]">
         {location}
       </p>
-      <Link href={href} className="w-full flex justify-end px-4">
+      <Link
+        href={href}
+        className="w-full flex justify-end px-4 hover:underline cursor-pointer"
+      >
         {" "}
         Learn More
       </Link>
