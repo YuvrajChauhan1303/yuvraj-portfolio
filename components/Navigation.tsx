@@ -28,11 +28,11 @@ const MiniMenu = () => {
   return (
     <div className="h-[480px] md:w-[25vw] w-[80vw] bg-gray-50/90 border border-black flex flex-col gap-4 uppercase font-medium font-[family-name:var(--font-geist-mono)] py-8 px-4 text-2xl absolute top-16 right-0 md:relative md:top-auto md:right-auto md:h-auto  mr-8 md:mr-0">
       <div className="flex flex-col gap-6">
+        <Link href={"/about"}>About</Link>
         <Link href={"/education"}>Education</Link>
         <Link href={"/projects"}>Projects</Link>
-        <Link href={"/skills"}>Skills</Link>
-        <Link href={"/about"}>About</Link>
-        <Link href={"/contact"}>Contact</Link>
+        <Link href={"/work"}>work</Link>
+        <Link href={"/skills"}>skills</Link>
       </div>
 
       <div className="pt-4 border-t-2 border-black">Connect with me:</div>

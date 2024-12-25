@@ -6,6 +6,12 @@ import Link from "next/link";
 import { GoArrowDown } from "react-icons/go";
 import Work from "./_components/Work";
 import { workData } from "./_components/_data/work";
+import Skill from "./_components/Skill";
+import {
+  toolData,
+  languageData,
+  interestData,
+} from "./_components/_data/skilllData";
 
 export default function Home() {
   const workRef = useRef<HTMLDivElement | null>(null);
@@ -94,6 +100,13 @@ export default function Home() {
             <Work key={index} {...work} />
           ))}
         </div>
+      </div>
+
+      {/* skills */}
+      <div className="h-screen">
+        <Skill title="tools & technologies" items={toolData} />
+        <Skill title="Languages" items={languageData} />
+        <Skill title="Interests" items={interestData} />
       </div>
     </div>
   );
