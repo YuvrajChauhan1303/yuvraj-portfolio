@@ -5,13 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { GoArrowDown } from "react-icons/go";
 import Work from "./_components/Work";
-import { workData } from "./_components/_data/work";
+import { workData } from "./_data/work";
 import Skill from "./_components/Skill";
-import {
-  toolData,
-  languageData,
-  interestData,
-} from "./_components/_data/skilllData";
+import { toolData, languageData, interestData } from "./_data/skilllData";
 
 export default function Home() {
   const workRef = useRef<HTMLDivElement | null>(null);
