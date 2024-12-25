@@ -1,101 +1,116 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { GoArrowDown } from "react-icons/go";
+import Work from "./_components/Work";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const workRef = useRef<HTMLDivElement | null>(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+  const handleScroll = () => {
+    workRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  return (
+    <div>
+      {/* landing */}
+      <div>
+        <div className="w-screen flex h-[90vh]">
+          {/* left */}
+          <div className="md:w-[60%] flex flex-col justify-center md:px-[10rem]">
+            <h1 className="md:text-[3.5rem] md:mb-3 font-[family-name:var(--font-geist-mono)]">
+              <span className="">yuvraj</span> <span className="">chauhan</span>
+            </h1>
+            <p className="font-medium">
+              a{" "}
+              <span className="font-bold underline">
+                computer science engineer
+              </span>{" "}
+              with interests in{" "}
+              <span className="font-bold underline">web development</span> ,{" "}
+              <span className="font-bold underline">
+                artificial intelligence
+              </span>{" "}
+              and more.{" "}
+              <span>
+                pre-final year @{" "}
+                <Link
+                  href="/education"
+                  className="hover:underline underline-offset-1"
+                >
+                  IIIT Vadodara, ICD
+                </Link>{" "}
+              </span>
+            </p>
+          </div>
+          {/* right */}
+          <div className="md:w-[40%] flex items-center justify-start">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={"/images/yuvraj.jpg"}
+              width={500}
+              height={500}
+              alt="a graphical representation of a picsart"
+              className=""
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className="h-[10vh] w-screen flex items-center justify-center font-mono hover:underline cursor-pointer"
+          onClick={handleScroll}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+          <span className="flex space-x-3 px-3">
+            <GoArrowDown />
+          </span>
+          scroll down{" "}
+          <span className="flex space-x-3 px-3">
+            <GoArrowDown />
+          </span>
+        </div>
+      </div>
+
+      {/* content */}
+      <div className="flex flex-col" ref={workRef}>
+        <h1 className="text-center text-4xl font-mono mt-12 mb-4">
+          relevant works / experience
+        </h1>
+        <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 justify-items-center">
+          <Work
+            duration="September - December 2024"
+            location="Dhankhar Technologies Pvt. Ltd."
+            type="Remote Internship"
+            role="Web Developer"
+            image="/images/icd.png"
+            alt="image related to TAship"
+            bg="bg-blue-50"
+            href=""
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <Work
+            duration="August - December 2024"
+            location="IIIT Vadodara - ICD"
+            type="Teaching Assistant"
+            role="Physics"
+            image="/images/icd.png"
+            alt="image related to TAship"
+            bg="bg-red-50"
+            href=""
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <Work
+            duration="July 2023 - March 2024"
+            location="SAC, IIIT Vadodara - ICD"
+            type="Technical Committee"
+            role="Member"
+            image="/images/icd.png"
+            alt="image related to TAship"
+            bg="bg-green-50"
+            href=""
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </div>
     </div>
   );
 }
