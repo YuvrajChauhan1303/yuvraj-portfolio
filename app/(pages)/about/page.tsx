@@ -9,68 +9,77 @@ import {
   FaTools,
   FaRegLightbulb,
   FaChess,
+  FaUsers,
 } from "react-icons/fa";
 
 export default function About() {
   return (
     <div className="flex flex-col py-8 px-4 sm:px-6 lg:px-24 min-h-screen">
-      {/* Page Title */}
-      <h1 className="text-3xl sm:text-4xl font-semibold font-[family-name:var(--font-geist-mono)] text-center">
-        About Yuvraj
-      </h1>
+      <div className="h-[90vh]">
+        {/* Page Title */}
+        <h1 className="text-3xl sm:text-4xl font-semibold font-[family-name:var(--font-geist-mono)]">
+          about yuvraj
+        </h1>
 
-      {/* Summary Section */}
-      <section className="mt-6 sm:mt-8">
-        <p className="text-base sm:text-lg font-mono text-center text-gray-700 max-w-4xl mx-auto leading-relaxed">
-          Yuvraj is a web developer specializing in creating robust and visually
-          engaging digital experiences. With expertise in modern technologies
-          like Node.js, Next.js, React.js, Tailwind, and Django, he blends
-          performance with design to deliver user-centric solutions.
-        </p>
-      </section>
+        {/* Summary Section */}
 
-      {/* Expertise Section */}
-      <section className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="space-y-6">
-          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
-            <FaTools className="inline-block mr-2 text-black" /> Technical
-            Expertise
-          </h2>
-          <p className="text-sm sm:text-base text-gray-700 font-mono leading-relaxed">
-            Yuvraj&apos;s skill set includes frontend and backend development,
-            with a strong grasp of frameworks and tools like Django, Next.js,
-            and Tailwind. He recently built a fully optimized company website
-            during his internship at{" "}
-            <Link
-              href="https://dhankhar.co.in"
-              className="text-blue-500 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dhankhar Technologies Pvt. Ltd.
-            </Link>
+        <section className="mt-6 sm:mt-8">
+          <p className="text-base sm:text-lg font-mono text-gray-700 w-full  leading-relaxed max-w-4xl">
+            yuvraj is a web developer specializing in creating robust and
+            visually engaging digital experiences. With expertise in modern
+            technologies like Node.js, Next.js, React.js, Tailwind, and Django,
+            he blends performance with design to deliver user-centric solutions.
           </p>
-          <p className="text-sm sm:text-base text-gray-700 font-mono leading-relaxed">
-            As a frontend engineer, he excels at crafting responsive designs
-            with smooth animations using GSAP, showcased in projects like Stavya
-            2024 and Horizon 2024.
-          </p>
-        </div>
-        <div className="flex items-center justify-center">
-          <Image
-            src="/images/yuvraj.jpg"
-            width={200}
-            height={200}
-            alt="Yuvraj Chauhan"
-            className="rounded-full shadow-lg object-cover w-48 h-48 sm:w-72 sm:h-72"
-          />
-        </div>
-      </section>
+        </section>
+
+        {/* Expertise Section */}
+        <section className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-6">
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono">
+              <FaTools className="inline-block mr-2 text-black " /> technical
+              expertise
+            </h2>
+            <p className="text-sm sm:text-base text-gray-700 font-mono leading-relaxed">
+              yuvraj&apos;s skill set includes frontend and backend development,
+              with a strong grasp of frameworks and tools like Django, Next.js,
+              and Tailwind. he recently built a fully optimized company website
+              during his internship at{" "}
+              <Link
+                href="https://dhankhar.co.in"
+                className="text-blue-500 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Dhankhar Technologies Pvt. Ltd.
+              </Link>
+            </p>
+            <p className="text-sm sm:text-base text-gray-700 font-mono leading-relaxed">
+              as a frontend engineer, he excels at crafting responsive designs
+              with smooth animations using GSAP, showcased in projects like
+              Stavya 2024 and Horizon 2024.
+            </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="/images/yuvraj.jpg"
+              width={200}
+              height={200}
+              alt="Yuvraj Chauhan"
+              className="rounded-full shadow-lg object-cover w-48 h-48 sm:w-72 sm:h-72"
+            />
+          </div>
+        </section>
+      </div>
+
+      <div className="h-[10vh] text-center font-mono">
+        {" "}
+        scroll down to learn more
+      </div>
 
       {/* Projects Section */}
-      <section className="mt-8 sm:mt-12">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 text-center">
-          <FaProjectDiagram className="inline-block mr-2" /> Notable Projects
+      <section className="">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono">
+          <FaProjectDiagram className="inline-block mr-2" /> notable projects
         </h2>
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectData.map((project, index) => (
@@ -85,12 +94,12 @@ export default function About() {
       </section>
 
       {/* Workshops & Leadership Section */}
-      <section className="mt-8 sm:mt-12 text-center">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
-          <FaRegLightbulb className="inline-block mr-2" /> Leadership &
+      <section className="mt-8 sm:mt-12">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
+          <FaRegLightbulb className="inline-block mr-2 " /> Leadership &
           Workshops
         </h2>
-        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl ">
           As a member of the student gymkhana (2023-24) and the GDSC Web Dev
           Volunteer team, Yuvraj played a key role in organizing Horizon 2024.
           He conducted workshops on front-end technologies and the anatomy of
@@ -99,14 +108,13 @@ export default function About() {
       </section>
 
       {/* Friends Section */}
-      <section className="mt-8 sm:mt-12 text-center">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
-          <FaRegLightbulb className="inline-block mr-2" /> Does he have Friends
-          tho?
+      <section className="mt-8 sm:mt-12 ">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
+          <FaUsers className="inline-block mr-2" /> Does he have Friends tho?
         </h2>
-        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-3xl mx-auto">
-          Yes, Yes he Does. Meet his Friends/Colleagues, with whom he has
-          created several Projects. They have an Organization on Github
+        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
+          yes! yes he Does. meet his friends/colleagues, with whom he has
+          created several projects. they have an organization on Github
           featuring their projects:{" "}
           <Link
             href="https://github.com/orgs/Room1097/repositories"
@@ -117,7 +125,7 @@ export default function About() {
           </Link>
         </p>
         <div className="flex flex-wrap items-center justify-center mt-4 gap-8">
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <Image
               src={"/images/yuvraj.jpg"}
               width={400}
@@ -127,7 +135,7 @@ export default function About() {
             />
             <p>@Srijan Sharma</p>
           </div>
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <Image
               src={"/images/yuvraj.jpg"}
               width={150}
@@ -137,7 +145,7 @@ export default function About() {
             />
             <p>@Trijay Patel</p>
           </div>
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <Image
               src={"/images/yuvraj.jpg"}
               width={150}
@@ -151,12 +159,39 @@ export default function About() {
       </section>
 
       {/* What does he do when not coding? */}
-      <section className="mt-8 sm:mt-12 text-center">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
+      <section className="mt-8 sm:mt-12 ">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
+          <FaCode className="inline-block mr-2" /> projects in domains other
+          than web development
+        </h2>
+        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
+          Apart from Web Development, Yuvraj is highly interested in
+          Cryptography and AI. He along with his friends, @Srijan, @Trijay &
+          @Tanay, implemented a Research Paper on Secret Image Sharing with
+          Polynomial Interpolation, and made enhancements to the original
+          scheme.
+        </p>
+        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
+          In an other Project, Yuvraj along with @Srijan and @Trijay created an
+          adaptive enemy AI, for a street-fighter style 1v1 PvP Game. They named
+          the project Neural-Brawl and the Project was created on Unity, and the
+          AI uses PPO as its learning model.
+        </p>
+        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
+          In a third project, he collaborated with @Trijay to create a secure
+          HTTP server of an HTTPS server, using the SSL-TLS handshake protocol.
+          They created a Certifying Authority which certified a HTTP server,
+          both servers working independently.
+        </p>
+      </section>
+
+      {/* What does he do when not coding? */}
+      <section className="mt-8 sm:mt-12 ">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
           <FaChess className="inline-block mr-2" /> What does he do when he is
           not coding?
         </h2>
-        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
           When Yuvraj isn&apos;t coding, he enjoys playing chess, and gaming.
           These activities help him stay balanced and inspired.
         </p>
