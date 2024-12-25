@@ -92,7 +92,7 @@ const MiniMenu: React.FC<MiniMenuProps> = ({ setOpen }) => {
       </div>
 
       <Link
-        href={""}
+        href={"/"}
         className="pt-4 border-t-2 border-black"
         onClick={handleClose}
       >
