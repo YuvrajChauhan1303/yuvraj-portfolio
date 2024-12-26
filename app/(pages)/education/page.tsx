@@ -1,6 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { subjects } from "@/app/_data/subjectData";
+import EducationItem from "./_components/EducationItem";
+import ProfileItem from "./_components/PeofileItem";
+import PaperItem from "./_components/PaperItem";
 export default function Education() {
   return (
     <div className="flex flex-col py-8 space-y-8 px-4 sm:px-6 lg:px-24 min-h-screen">
@@ -85,58 +88,3 @@ export default function Education() {
     </div>
   );
 }
-
-interface EducationItemProps {
-  subject: string;
-}
-
-const EducationItem = ({ subject }: EducationItemProps) => {
-  return (
-    <div className="border-2 border-black bg-gray-200 py-2 px-4 font-mono">
-      {subject}
-    </div>
-  );
-};
-
-interface ProfileItemProps {
-  title: string;
-  username: string;
-  href?: string;
-}
-
-const ProfileItem = ({ title, username, href }: ProfileItemProps) => {
-  return (
-    <div className=" font-mono flex justify-between w-[80vw] md:w-[50vw] items-center">
-      <div>
-        <span className="font-semibold underline text-xl">{title}</span> :{" "}
-        <span className="text-xl"> {username}</span>
-      </div>{" "}
-      {href && (
-        <Link href={href} target="_blank">
-          visit
-        </Link>
-      )}
-    </div>
-  );
-};
-
-interface PaperItemProps {
-  number: string;
-  title: string;
-  link: string;
-}
-
-const PaperItem = ({ number, title, link }: PaperItemProps) => {
-  return (
-    <div className="flex">
-      <div className="w-10/12 justify-center items-center">
-        {number}. {title}
-      </div>
-      <div className="w-1/12 justify-between items-center">
-        <a target="_blank" className="font-bold" href={link}>
-          read
-        </a>
-      </div>
-    </div>
-  );
-};

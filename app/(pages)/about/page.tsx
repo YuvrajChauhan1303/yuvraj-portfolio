@@ -68,15 +68,15 @@ export default function About() {
             <Polaroid
               image="/images/yuvraj.png"
               size={300}
-              height="h-[42vh] md:h-[55vh]"
+              height="md:h-[400px]"
               text="yuvraj"
               border={true}
               classname={"md:block hidden"}
             />
             <Polaroid
               image="/images/yuvraj.png"
-              size={300}
-              height="h-[46vh] md:h-[48vh]"
+              size={310}
+              height="h-[400px]"
               text="yuvraj"
               border={true}
               classname="md:hidden block"
@@ -136,7 +136,7 @@ export default function About() {
       </section>
       <div className="flex flex-wrap items-center justify-center md:gap-0 gap-8 md:justify-between w-full mt-8">
         <Polaroid
-          height="h-[48vh]"
+          height="h-[400px]"
           image="/images/yuvraj.png"
           text="srijan sharma"
           size={310}
@@ -151,7 +151,7 @@ export default function About() {
           classname="md:block hidden"
         />
         <Polaroid
-          height="h-[48vh]"
+          height="h-[400px]"
           image="/images/yuvraj.png"
           text="srijan sharma"
           size={310}
@@ -166,7 +166,7 @@ export default function About() {
           classname="md:block hidden"
         />
         <Polaroid
-          height="h-[48vh]"
+          height="h-[400px]"
           image="/images/yuvraj.png"
           text="srijan sharma"
           size={310}
@@ -181,7 +181,7 @@ export default function About() {
           classname="md:block hidden"
         />
         <Polaroid
-          height="h-[48vh]"
+          height="h-[400px]"
           image="/images/yuvraj.png"
           text="srijan sharma"
           size={310}

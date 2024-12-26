@@ -71,11 +71,20 @@ export default function Home() {
           {/* Right (Image) */}
           <div className="w-full flex items-center justify-center">
             <Polaroid
-              height="h-[56vh]"
+              height="md:h-[400px] "
               image="/images/yuvraj.png"
               text="yuvraj chauhan"
               size={300}
               border={true}
+              classname="md:block hidden"
+            />
+            <Polaroid
+              height="h-[360px] "
+              image="/images/yuvraj.png"
+              text="yuvraj chauhan"
+              size={270}
+              border={true}
+              classname="block md:hidden"
             />
           </div>
         </div>
