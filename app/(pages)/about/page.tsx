@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ProjectCard from "./_components/ProjectCard";
@@ -11,30 +11,35 @@ import {
   FaChess,
   FaUsers,
 } from "react-icons/fa";
+// import { GoArrowDown } from "react-icons/go";
+import Polaroid from "@/components/Polaroid";
 
 export default function About() {
   return (
     <div className="flex flex-col py-8 px-4 sm:px-6 lg:px-24 min-h-screen">
-      <div className="h-[90vh]">
+      <div className="">
         {/* Page Title */}
-        <h1 className="text-3xl sm:text-4xl font-semibold font-[family-name:var(--font-geist-mono)]">
-          about yuvraj
-        </h1>
+        <div className="bg-white p-8 w-auto border-2 border-black border-dotted">
+          <h1 className="text-3xl sm:text-4xl font-semibold font-[family-name:var(--font-geist-mono)]">
+            about yuvraj
+          </h1>
 
-        {/* Summary Section */}
+          {/* Summary Section */}
 
-        <section className="mt-6 sm:mt-8">
-          <p className="text-base sm:text-lg font-mono text-gray-700 w-full  leading-relaxed max-w-4xl">
-            yuvraj is a web developer specializing in creating robust and
-            visually engaging digital experiences. With expertise in modern
-            technologies like Node.js, Next.js, React.js, Tailwind, and Django,
-            he blends performance with design to deliver user-centric solutions.
-          </p>
-        </section>
+          <section className="mt-6 sm:mt-8">
+            <p className="text-base sm:text-lg font-mono text-gray-700 w-full  leading-relaxed max-w-4xl">
+              yuvraj is a web developer specializing in creating robust and
+              visually engaging digital experiences. With expertise in modern
+              technologies like Node.js, Next.js, React.js, Tailwind, and
+              Django, he blends performance with design to deliver user-centric
+              solutions.
+            </p>
+          </section>
+        </div>
 
         {/* Expertise Section */}
         <section className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
+          <div className="space-y-6 bg-white border-2 border-black border-dashed p-8">
             <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono">
               <FaTools className="inline-block mr-2 text-black " /> technical
               expertise
@@ -60,24 +65,28 @@ export default function About() {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <Image
-              src="/images/yuvraj.jpg"
-              width={200}
-              height={200}
-              alt="Yuvraj Chauhan"
-              className="rounded-full shadow-lg object-cover w-48 h-48 sm:w-72 sm:h-72"
+            <Polaroid
+              image="/images/yuvraj.png"
+              size={300}
+              height="h-[42vh] md:h-[55vh]"
+              text="yuvraj"
+              border={true}
+              classname={"md:block hidden"}
+            />
+            <Polaroid
+              image="/images/yuvraj.png"
+              size={300}
+              height="h-[46vh] md:h-[48vh]"
+              text="yuvraj"
+              border={true}
+              classname="md:hidden block"
             />
           </div>
         </section>
       </div>
 
-      <div className="h-[10vh] text-center font-mono">
-        {" "}
-        scroll down to learn more
-      </div>
-
       {/* Projects Section */}
-      <section className="">
+      <section className="mt-20">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono">
           <FaProjectDiagram className="inline-block mr-2" /> notable projects
         </h2>
@@ -94,7 +103,7 @@ export default function About() {
       </section>
 
       {/* Workshops & Leadership Section */}
-      <section className="mt-8 sm:mt-12">
+      <section className="mt-8 sm:mt-12 border-2 border-black border-dashed p-8 bg-white">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
           <FaRegLightbulb className="inline-block mr-2 " /> Leadership &
           Workshops
@@ -108,7 +117,7 @@ export default function About() {
       </section>
 
       {/* Friends Section */}
-      <section className="mt-8 sm:mt-12 ">
+      <section className="mt-8 sm:mt-12 border-2 border-black border-dashed p-8 bg-white">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
           <FaUsers className="inline-block mr-2" /> Does he have Friends tho?
         </h2>
@@ -124,42 +133,72 @@ export default function About() {
             Room 1097
           </Link>
         </p>
-        <div className="flex flex-wrap items-center justify-center mt-4 gap-8">
-          <div className="flex flex-col items-center justify-center">
-            <Image
-              src={"/images/yuvraj.jpg"}
-              width={400}
-              height={300}
-              className="rounded-full object-contain h-48 w-48"
-              alt="Srijan"
-            />
-            <p>@Srijan Sharma</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <Image
-              src={"/images/yuvraj.jpg"}
-              width={150}
-              height={150}
-              className="rounded-full object-cover h-48 w-48"
-              alt="Trijay"
-            />
-            <p>@Trijay Patel</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <Image
-              src={"/images/yuvraj.jpg"}
-              width={150}
-              height={150}
-              className="rounded-full object-cover h-48 w-48"
-              alt="Tanay"
-            />
-            <p>@Tanay Patel</p>
-          </div>
-        </div>
       </section>
+      <div className="flex flex-wrap items-center justify-center md:gap-0 gap-8 md:justify-between w-full mt-8">
+        <Polaroid
+          height="h-[48vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={310}
+          classname="md:hidden block"
+          border={true}
+        />
+        <Polaroid
+          height="h-[33vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={150}
+          classname="md:block hidden"
+        />
+        <Polaroid
+          height="h-[48vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={310}
+          border={true}
+          classname="md:hidden block"
+        />
+        <Polaroid
+          height="h-[33vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={150}
+          classname="md:block hidden"
+        />
+        <Polaroid
+          height="h-[48vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={310}
+          border={true}
+          classname="md:hidden block"
+        />
+        <Polaroid
+          height="h-[33vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={150}
+          classname="md:block hidden"
+        />
+        <Polaroid
+          height="h-[48vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={310}
+          border={true}
+          classname="md:hidden block"
+        />
+        <Polaroid
+          height="h-[33vh]"
+          image="/images/yuvraj.png"
+          text="srijan sharma"
+          size={150}
+          classname="md:block hidden"
+        />
+      </div>
 
-      {/* What does he do when not coding? */}
-      <section className="mt-8 sm:mt-12 ">
+      {/* projects in other domain */}
+      <section className="mt-8 sm:mt-12 border-2 border-black border-dashed p-8 bg-white">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
           <FaCode className="inline-block mr-2" /> projects in domains other
           than web development
@@ -186,7 +225,7 @@ export default function About() {
       </section>
 
       {/* What does he do when not coding? */}
-      <section className="mt-8 sm:mt-12 ">
+      <section className="mt-8 sm:mt-12 border-2 border-black border-dashed p-8 bg-white">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
           <FaChess className="inline-block mr-2" /> What does he do when he is
           not coding?

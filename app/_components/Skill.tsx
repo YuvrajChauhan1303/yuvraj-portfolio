@@ -13,7 +13,7 @@ const Skill = ({ title, items }: SkillProps) => {
           {title}
         </div>
 
-        <div className="flex flex-wrap gap-4 justify-start md:w-2/3 w-[75vw]">
+        <div className="flex flex-wrap gap-4 justify-center md:w-2/3 w-[75vw]">
           {items.map((item, index) => (
             <SkillItem key={index} text={item.text} />
           ))}

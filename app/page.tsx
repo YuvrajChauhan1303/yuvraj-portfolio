@@ -1,13 +1,14 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { GoArrowDown } from "react-icons/go";
 import Work from "./_components/Work";
 import { workData } from "./_data/work";
 import Skill from "./_components/Skill";
 import { toolData, languageData, interestData } from "./_data/skilllData";
+import Polaroid from "@/components/Polaroid";
 
 export default function Home() {
   const workRef = useRef<HTMLDivElement | null>(null);
@@ -68,13 +69,13 @@ export default function Home() {
           </div>
 
           {/* Right (Image) */}
-          <div className="w-full flex justify-center">
-            <Image
-              src="/images/yuvraj.jpg"
-              width={500}
-              height={500}
-              alt="a graphical representation of a picsart"
-              className="object-contain"
+          <div className="w-full flex items-center justify-center">
+            <Polaroid
+              height="h-[56vh]"
+              image="/images/yuvraj.png"
+              text="yuvraj chauhan"
+              size={300}
+              border={true}
             />
           </div>
         </div>

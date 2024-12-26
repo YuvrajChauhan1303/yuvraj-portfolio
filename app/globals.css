@@ -5,3 +5,10 @@
 body::-webkit-scrollbar {
   display: none;
 }
+
+body {
+  height: full;
+  width: full;
+  /* background: ; */
+  background-image: url(/images/grainy.svg);
+}

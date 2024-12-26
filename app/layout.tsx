@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto_Condensed } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Roboto_Condensed,
+  Playwrite_CO,
+} from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 
@@ -11,6 +16,10 @@ const geistSans = Geist({
 const robotoCondensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
   subsets: ["latin"],
+});
+
+const playwriteCo = Playwrite_CO({
+  variable: "--font-playwrite",
 });
 
 const geistMono = Geist_Mono({
@@ -33,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} ${playwriteCo.variable} antialiased overflow-x-hidden `}
       >
         <Navigation />
         {children}
