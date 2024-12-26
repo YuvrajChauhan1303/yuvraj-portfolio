@@ -146,9 +146,9 @@ export default function Work() {
           <p>
             additionally, he and <span className="font-bold">@tanay</span>{" "}
             conducted <span className="font-bold">viva examinations </span>
-            to assess the students' understanding of theoretical concepts and
-            their practical applications. this role allowed him to enhance his
-            teaching skills, work collaboratively, and provide constructive
+            to assess the students&apos; understanding of theoretical concepts
+            and their practical applications. this role allowed him to enhance
+            his teaching skills, work collaboratively, and provide constructive
             feedback to help students improve their learning experience.
           </p>
         </div>
