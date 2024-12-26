@@ -7,6 +7,8 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +46,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} ${playwriteCo.variable} antialiased overflow-x-hidden `}
       >
+        <Analytics />
+        <SpeedInsights />
         <Navigation />
         {children}
       </body>
