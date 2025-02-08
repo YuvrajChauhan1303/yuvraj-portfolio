@@ -9,6 +9,8 @@ import { workData } from "./_data/work";
 import Skill from "./_components/Skill";
 import { toolData, languageData, interestData } from "./_data/skilllData";
 import Polaroid from "@/components/Polaroid";
+import ProjectSection from "./_components/Projects/ProjectSection";
+import { WebProjects } from "./_components/Projects/ProjectData";
 
 export default function Home() {
   const workRef = useRef<HTMLDivElement | null>(null);
@@ -25,7 +27,6 @@ export default function Home() {
       {/* Landing */}
       <div>
         <div className="w-screen flex flex-col-reverse md:flex-row h-screen md:h-[90vh] gap-12">
-          {/* Left (Text) */}
           <div className="flex flex-col justify-center px-8 md:px-[10rem] w-full md:w-[62%]">
             <h1 className="text-4xl md:text-[3.5rem] font-[family-name:var(--font-geist-mono)] flex flex-row gap-4">
               <span>yuvraj</span> <span>chauhan</span>
@@ -55,7 +56,6 @@ export default function Home() {
               <span className="font-bold">Note</span>: The portfolio is still
               under development and will be completed shortly.
             </p>
-            {/* Button to Download Resume */}
 
             <div className="mt-8">
               <a
@@ -68,7 +68,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right (Image) */}
           <div className="w-full flex items-center justify-center">
             <Polaroid
               height="md:h-[400px] "
@@ -89,7 +88,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll down */}
         <div
           className="h-[10vh] w-screen flex items-center justify-center font-mono hover:underline cursor-pointer"
           onClick={handleScroll}
@@ -106,7 +104,7 @@ export default function Home() {
 
       {/* Work / Experience Section */}
       <div
-        className="flex flex-col border-t-black border-b-black border border-dashed"
+        className="flex flex-col bg-gray-100/30 border-t-black border-b-black border border-dashed"
         ref={workRef}
       >
         <h1 className="text-center text-4xl font-mono mt-12 mb-4">
@@ -129,6 +127,14 @@ export default function Home() {
           <Skill title="Languages" items={languageData} />
           <Skill title="Interests" items={interestData} />
         </div>
+      </div>
+
+      {/* featured projects */}
+      <div className="pb-12 flex flex-col border-t-black border-dashed border bg-gray-100/30">
+        <h1 className="text-center text-4xl font-mono mt-12 mb-4">
+          featured projects
+        </h1>
+        <ProjectSection title="web development" card={WebProjects} />
       </div>
     </div>
   );
