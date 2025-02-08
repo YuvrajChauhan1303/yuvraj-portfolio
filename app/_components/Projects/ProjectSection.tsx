@@ -16,9 +16,7 @@ const ProjectSection = ({ card, title }: ProjectProps) => {
 
   return (
     <div className="flex-col gap-6 px-[4rem] flex">
-      <h1 className="font-mono font-semibold underline text-xl">
-        Web Development
-      </h1>
+      <h1 className="font-mono font-semibold underline text-xl">{title}</h1>
       <div className="flex gap-6 px-8 flex-row flex-wrap justify-center">
         {card.map((project, index) => (
           <ProjectCard
