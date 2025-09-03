@@ -1,10 +1,11 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import workExperience from "./work.json";
+import positions from "./position.json";
 
 export default function Work() {
   return (
     <div className="flex flex-col space-y-8 py-8 px-4 sm:px-6 lg:px-24 min-h-screen">
-      {/* work experience */}
       <div className="bg-white p-8 border-2 border-black border-dashed">
         <h1 className="font-[family-name:var(--font-geist-mono)] text-3xl font-bold">
           work experience
@@ -62,118 +63,59 @@ export default function Work() {
           </p>
         </div>
       </div>
-
-      {/* internship */}
+      {/* Work Experience */}
       <div className="bg-white p-8 border-2 border-black border-dashed">
-        <h1 className="font-[family-name:var(--font-geist-mono)] text-xl md:text-2xl font-bold">
+        <h1 className="font-[family-name:var(--font-geist-mono)] text-3xl font-bold">
           1. internship experience
         </h1>
-        <div className="mt-6 space-y-6 font-mono px-6">
-          <h2 className=" flex justify-between">
-            <span className="text-xl font-semibold">
-              1.1 Web Developer, Dhankhar Technologies Private Limited
-            </span>{" "}
-            <span className="underline">Sept. - Dec. 2024</span>
-          </h2>
-
-          <p>
-            yuvraj worked as the lead developer on the website for the company{" "}
-            <Link
-              href={"https://dhankhar.co.in"}
-              target="_blank"
-              className="font-bold"
-            >
-              Dhankhar Technologies Private Limited
-            </Link>
-            , where he designed and developed the website from scratch. during
-            his internship, he explored concepts such as{" "}
-            <span className="font-bold">SEO optimization</span>,
-            <span className="font-bold">performance optimization</span>, and
-            <span className="font-bold">accessibility optimization</span> to
-            ensure a high SEO score and fast website performance.
-          </p>
-          <p>
-            yuvraj gained hands-on experience with{" "}
-            <span className="font-bold">AWS Amplify</span> as a platform for
-            deploying websites and learned how to work in production
-            environments. during the internship, he was introduced to intricate
-            design principles such as maintaining equal padding/margins and
-            ensuring uniformity across multiple pages, demonstrating how
-            simplicity can be made elegant. his mentor,{" "}
-            <Link
-              href={"https://www.dhankhar.co.in/about-us"}
-              target="_blank"
-              className="font-bold"
-            >
-              hemant dhankhar
-            </Link>
-            , guided him throughout the 4-month journey, providing valuable
-            insights and support.
-          </p>
-
-          <p>
-            his work can be viewed here :{" "}
-            <Link
-              href={"https://www.dhankhar.co.in"}
-              target="_blank"
-              className="font-bold"
-            >
-              {" "}
-              Dhankhar Technologies Private Limited
-            </Link>
-          </p>
-        </div>
-        <div className="mt-6 space-y-6 font-mono px-6">
-          <h2 className=" flex justify-between">
-            <span className="text-xl font-semibold">
-              1.2 Teaching Assistant, IIIT Vadodara ICD
-            </span>{" "}
-            <span className="underline">Sept. - Dec. 2024</span>
-          </h2>
-
-          <p>
-            during the PH100: mechanics and thermodynamics course, yuvraj served
-            as a teaching assistant (TA) under{" "}
-            <span className="font-bold">dr. vivek m. vyas</span>, supporting a
-            class of 101 students alongside{" "}
-            <span className="font-bold">@tanay</span>. his responsibilities
-            included engaging with first-year students and teaching them MATLAB
-            tools and libraries such as{" "}
-            <span className="font-bold">symbolic math tools</span>,
-            <span className="font-bold">ODE45</span>, and{" "}
-            <span className="font-bold">plot functions</span>.
-          </p>
-          <p>
-            additionally, he and <span className="font-bold">@tanay</span>{" "}
-            conducted <span className="font-bold">viva examinations </span>
-            to assess the students&apos; understanding of theoretical concepts
-            and their practical applications. this role allowed him to enhance
-            his teaching skills, work collaboratively, and provide constructive
-            feedback to help students improve their learning experience.
-          </p>
+        <div className="space-y-6 mt-6 font-mono">
+          {workExperience.map((work) => (
+            <div key={work.id} className="mb-6">
+              <h2 className="flex justify-between text-xl font-semibold lowercase">
+                <span>
+                  {work.id }{" "}{work.title}, {work.organization}
+                </span>
+                <span className="underline">{work.duration}</span>
+              </h2>
+              <p className="mt-2 lowercase">{work.description}</p>
+              {work.mentor && (
+                <p className="mt-2 lowercase font-bold">mentor: {work.mentor}</p>
+              )}
+              {work.link && (
+                <p className="mt-2 lowercase">
+                  website:{" "}
+                  <a
+                    href={work.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold underline lowercase"
+                  >
+                    {work.organization}
+                  </a>
+                </p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* position of responsibility */}
+      {/* Positions of Responsibility */}
       <div className="bg-white p-8 border-2 border-black border-dashed">
-        <h1 className="font-[family-name:var(--font-geist-mono)] text-xl md:text-2xl font-bold">
+        <h1 className="font-[family-name:var(--font-geist-mono)] text-3xl font-bold">
           2. positions of responsibility / management
         </h1>
-        <div className="mt-6 space-y-6 font-mono px-6">
-          <h2 className=" flex justify-between">
-            <span className="text-xl font-semibold">
-              2.1 Member, Technical Committee
-            </span>{" "}
-            <span className="underline">May. 2023 - Sept. 2024</span>
-          </h2>
-        </div>
-        <div className="mt-6 space-y-6 font-mono px-6">
-          <h2 className=" flex justify-between">
-            <span className="text-xl font-semibold">
-              2.2 Volunteer, Web Development @ GDSC IIIT Vadodara, ICD
-            </span>{" "}
-            <span className="underline">Sept. 2023 - Sept. 2024</span>
-          </h2>
+        <div className="space-y-6 mt-6 font-mono">
+          {positions.map((pos) => (
+            <div key={pos.id} className="mb-6">
+              <h2 className="flex justify-between text-xl font-semibold lowercase">
+                <span>
+                  {pos.id }{" "}{pos.title}, {pos.organization}
+                </span>
+                <span className="underline">{pos.duration}</span>
+              </h2>
+              <p className="mt-2 lowercase">{pos.responsibilities}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

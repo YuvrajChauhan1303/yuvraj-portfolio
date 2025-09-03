@@ -17,4 +17,9 @@ export const subjects = [
   "Probability and Statistics",
   "Numerical Techniques",
   "Cryptography and Network Security",
+  "Machine Learning",
+  "Data Analytics and Visualization",
+  "Topics in Security and Privacy",
+  "Introduction to Metaverse",
+  "5G Communication and Network"
 ];

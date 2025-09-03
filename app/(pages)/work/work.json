@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1.1",
+    "title": "teaching assistant",
+    "organization": "design of analysis and algorithms",
+    "duration": "sept. - dec. 2025",
+    "description": "currently serving as a teaching assistant for the course on design of analysis and algorithms, responsible for guiding over 100 students throughout the semester. duties include conducting tutorials, assisting students with complex algorithmic concepts, and helping evaluate assignments and exams. actively provide constructive feedback to improve student learning outcomes and promote a collaborative learning environment.",
+    "mentor": "dr. gaurav pareek"
+  },
+  {
+    "id": "1.2",
+    "title": "freelance web developer",
+    "organization": "krenital pharma",
+    "duration": "august 2025",
+    "description": "recently completed a freelance project developing the entire website for krenital pharma, a newly launched pharmaceutical brand. built the site using next.js framework focusing on high performance, seo optimization, and responsive design to enhance user experience. collaborated closely with the client to understand branding requirements and incorporated best practices to ensure search engine visibility and fast loading times across devices.",
+    "link": "https://www.krenitalpharma.com"
+  },
+  {
+    "id": "1.3",
+    "title": "research intern",
+    "organization": "nit karnataka",
+    "duration": "may - august 2025",
+    "description": "worked as a research intern under the mentorship of purushothama b r in the field of applied cryptography, with a specific focus on secret image sharing (sis). contributed by implementing research ideas and algorithms proposed in recent papers using python and google colab. actively participated in literature reviews and discussions, and authored a research paper based on project outcomes, which is currently in the process of submission to a peer-reviewed journal.",
+    "mentor": "dr. purushothama b r"
+  },
+  {
+    "id": "1.4",
+    "title": "teaching assistant",
+    "organization": "basic electrical engineering laboratory",
+    "duration": "jan. - may 2025",
+    "description": "served as a teaching assistant for the basic electrical engineering laboratory course, guiding over 100 students through hands-on experiments and practical sessions. responsibilities included preparing lab materials, demonstrating experimental setups, assisting students with analysis and troubleshooting, and grading lab reports. fostered a supportive learning atmosphere to help students grasp electrical engineering concepts effectively.",
+    "mentor": "dr. jignesh patel"
+  },
+  {
+    "id": "1.5",
+    "title": "web developer",
+    "organization": "dhankhar technologies private limited",
+    "duration": "sept. - dec. 2024",
+    "description": "led development and designed website from scratch. explored seo, performance, and accessibility optimization. gained hands-on experience with aws amplify deployment. maintained design principles like equal padding/margins and page uniformity. mentored by hemant dhankhar.",
+    "link": "https://www.dhankhar.co.in"
+  },
+  {
+    "id": "1.6",
+    "title": "teaching assistant",
+    "organization": "iiit vadodara icd",
+    "duration": "sept. - dec. 2024",
+    "description": "served as ta for ph100: mechanics and thermodynamics. supported 101 students, taught matlab symbolic math tools, ode45, and plot functions. conducted viva exams to assess understanding of theory and practice. enhanced teaching, collaboration, and feedback skills.",
+    "mentor": "dr. vivek m. vyas"
+  }
+]

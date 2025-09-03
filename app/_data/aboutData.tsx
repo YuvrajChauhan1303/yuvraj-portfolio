@@ -1,20 +1,20 @@
 export const projectData = [
   {
-    title: "Social Media Service",
+    title: "(k,n) Threshold SIS Scheme",
     content:
-      "A backend project leveraging Django and Node.js to develop a scalable social media platform.",
+      "Implemented applied cryptography algorithms for secret image sharing using MATLAB and improving precursor scheme.",
     href: "",
   },
   {
-    title: "Stavya 2024",
+    title: "Electronic Elections",
     content:
-      "Designed and developed an animated website for the annual literature festival using Next.js and GSAP.",
+      "Developed a secure and transparent electronic election system, focusing on privacy and verifiability through cryptographic protocols.",
     href: "",
   },
   {
-    title: "Horizon 2024",
+    title: "Virtual Electrical Lab with Digital Twin",
     content:
-      "Created a visually engaging site for the annual technical festival with advanced user interaction.",
+      "Built a virtual world on Unity along with a digital twin for live-physics instead of simulated-physics environment.",
     href: "",
   },
 ];

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "domain": "web development",
+    "projects": [
+      {
+        "id": "1.1",
+        "title": "krenital pharma",
+        "description": "developed entire website using next js. focused on seo and performance optimization. collaborated closely with client on branding and design.",
+        "tools": ["next.js", "react", "seo", "performance optimization"],
+        "src": "/images/projects/krenital-pharma-mock.png",
+        "link": "https://www.krenitalpharma.com"
+      },
+      {
+        "id": "1.2",
+        "title": "dhankhar technologies",
+        "description": "led development and designed website from scratch. implemented seo, performance, and accessibility optimizations. deployed using aws amplify.",
+        "tools": ["django", "node.js", "aws amplify", "seo"],
+        "src": "/images/projects/bayleaf-mock.png",
+        "link": "https://www.dhankhar.co.in"
+      },
+      {
+        "id": "1.3",
+        "title": "horizon 2024 website",
+        "description": "created a dynamic and visually engaging site for the annual technical festival. incorporated advanced user interactions. ensured responsive design and accessibility.",
+        "tools": ["next.js", "react", "css", "javascript"],
+        "src": "/images/projects/horizon-mock.png",
+        "link": "https://horizon-website-2024-psi.vercel.app"
+      },
+      {
+        "id": "1.4",
+        "title": "stavya 2024 website",
+        "description": "designed and developed an animated website for the annual literature festival. used gsap for animations and advanced frontend effects. focused on user engagement and smooth navigation.",
+        "tools": ["next.js", "gsap", "react", "css"],
+        "src": "/images/projects/stavya-mock.png",
+        "link": "https://stavya-website.vercel.app"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "domain": "cryptography / security & privacy",
+    "projects": [
+      {
+        "id": "2.1",
+        "title": "(k,n) threshold pixel-coordinate based sis",
+        "description": "implemented a threshold scheme for secret image sharing based on pixel coordinates. utilized cryptographic techniques for enhanced security. evaluated performance and visual quality of shared images.",
+        "tools": ["python", "cryptography", "image processing"],
+        "src": "/images/projects/sis.png",
+        "link": "https://drive.google.com/drive/folders/1NlMOJZY_DVDtZaSx14b6PVkwFLs9fhx_?usp=sharing"
+      },
+      {
+        "id": "2.2",
+        "title": "so:sis - storage optimized sis based on huffman encoding",
+        "description": "developed a storage-optimized secret image sharing technique using huffman encoding. reduced storage requirements without compromising security. analyzed encoding efficiency and share reconstruction.",
+        "tools": ["python", "huffman encoding", "cryptography"],
+        "src": "/images/projects/sosis.png",
+        "link": ""
+      },
+      {
+        "id": "2.3",
+        "title": "electronic elections based on delfs and knebl",
+        "description": "designed a secure and transparent electronic election system. ensured privacy and verifiability using advanced cryptographic protocols. developed proof of concept implementation.",
+        "tools": ["python", "cryptography", "security protocols"],
+        "src": "/images/projects/electronic-elections.png",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "domain": "ai",
+    "projects": [
+      {
+        "id": "3.1",
+        "title": "adaptive enemy agent trained using ppo with hyperparameter tuning study",
+        "description": "developed an adaptive enemy agent using proximal policy optimization. conducted extensive hyperparameter tuning to optimize performance. evaluated agent behavior in simulation environments.",
+        "tools": ["python", "pytorch", "reinforcement learning"],
+        "src": "/images/projects/ai-ppo.png",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "domain": "ar / vr",
+    "projects": [
+      {
+        "id": "4.1",
+        "title": "virtual electrical lab with digital twin for two-way live-data communication",
+        "description": "created a virtual electrical lab with a digital twin interface. enabled two-way live data communication between physical and virtual environments. improved remote learning experience for students.",
+        "tools": ["unity", "raspberry pi", "digital twin", "ar/vr"],
+        "src": "/images/projects/vr.png",
+        "link": "https://drive.google.com/file/d/1FTAasLjdb69gF4B2An9-xs0othIZet9f/view?usp=sharing"
+      }
+    ]
+  }
+]

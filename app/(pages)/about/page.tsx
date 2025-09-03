@@ -28,11 +28,7 @@ export default function About() {
 
           <section className="mt-6 sm:mt-8">
             <p className="text-base sm:text-lg font-mono text-gray-700 w-full  leading-relaxed max-w-4xl">
-              yuvraj is a web developer specializing in creating robust and
-              visually engaging digital experiences. With expertise in modern
-              technologies like Node.js, Next.js, React.js, Tailwind, and
-              Django, he blends performance with design to deliver user-centric
-              solutions.
+             yuvraj is a final year b.tech computer science student at iiit vadodara icd with experience in full stack web development, security, machine learning, ar/vr, and embedded systems. he has worked as a web developer intern, led technical committee, and supported 100+ students as a teaching assistant. currently seeking roles in ai, cybersecurity, or iot.
             </p>
           </section>
         </div>
@@ -86,7 +82,7 @@ export default function About() {
       </div>
 
       {/* Projects Section */}
-      <section className="mt-20">
+      {/* <section className="mt-20">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono">
           <FaProjectDiagram className="inline-block mr-2" /> notable projects
         </h2>
@@ -100,7 +96,7 @@ export default function About() {
             />
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Workshops & Leadership Section */}
       <section className="mt-8 sm:mt-12 border-2 border-black border-dashed p-8 bg-white">
@@ -137,16 +133,46 @@ export default function About() {
       <div className="flex flex-wrap items-center justify-center md:gap-0 gap-8 md:justify-between w-full mt-8">
         <Polaroid
           height="h-[400px]"
-          image="/images/yuvraj.png"
+          image="/images/srijan.jpeg"
           text="srijan sharma"
-          size={310}
+          size={240}
           classname="md:hidden block"
           border={true}
         />
         <Polaroid
           height="h-[33vh]"
-          image="/images/yuvraj.png"
+          image="/images/srijan.jpeg"
           text="srijan sharma"
+          size={150}
+          classname="md:block hidden"
+        />
+        <Polaroid
+          height="h-[400px]"
+          image="/images/trijay.jpeg"
+          text="trijay patel"
+          size={240}
+          border={true}
+          classname="md:hidden block"
+        />
+        <Polaroid
+          height="h-[33vh]"
+          image="/images/trijay.jpeg"
+          text="trijay patel"
+          size={150}
+          classname="md:block hidden"
+        />
+        <Polaroid
+          height="h-[400px]"
+          image="/images/harshit.jpeg"
+          text="harshit chouhan"
+          size={240}
+          border={true}
+          classname="md:hidden block"
+        />
+        <Polaroid
+          height="h-[33vh]"
+          image="/images/harshit.jpeg"
+          text="harshit chouhan"
           size={150}
           classname="md:block hidden"
         />
@@ -154,37 +180,7 @@ export default function About() {
           height="h-[400px]"
           image="/images/yuvraj.png"
           text="srijan sharma"
-          size={310}
-          border={true}
-          classname="md:hidden block"
-        />
-        <Polaroid
-          height="h-[33vh]"
-          image="/images/yuvraj.png"
-          text="srijan sharma"
-          size={150}
-          classname="md:block hidden"
-        />
-        <Polaroid
-          height="h-[400px]"
-          image="/images/yuvraj.png"
-          text="srijan sharma"
-          size={310}
-          border={true}
-          classname="md:hidden block"
-        />
-        <Polaroid
-          height="h-[33vh]"
-          image="/images/yuvraj.png"
-          text="srijan sharma"
-          size={150}
-          classname="md:block hidden"
-        />
-        <Polaroid
-          height="h-[400px]"
-          image="/images/yuvraj.png"
-          text="srijan sharma"
-          size={310}
+          size={240}
           border={true}
           classname="md:hidden block"
         />
@@ -200,27 +196,30 @@ export default function About() {
       {/* projects in other domain */}
       <section className="mt-8 sm:mt-12 border-2 border-black border-dashed p-8 bg-white">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 font-mono lowercase">
-          <FaCode className="inline-block mr-2" /> projects in domains other
+          <FaCode className="inline-block mr-2" /> interests in domains other
           than web development
         </h2>
         <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
           Apart from Web Development, Yuvraj is highly interested in
-          Cryptography and AI. He along with his friends, @Srijan, @Trijay &
+          Cryptography, Metaverse and AI. He along with his friends, @Srijan, @Trijay &
           @Tanay, implemented a Research Paper on Secret Image Sharing with
           Polynomial Interpolation, and made enhancements to the original
-          scheme.
+          scheme. A research paper has been presented at the ICCCNT 16th Edition conference held at IIT Indore, Madhya Pradesh in the July of 2025.
         </p>
         <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
           In an other Project, Yuvraj along with @Srijan and @Trijay created an
           adaptive enemy AI, for a street-fighter style 1v1 PvP Game. They named
           the project Neural-Brawl and the Project was created on Unity, and the
-          AI uses PPO as its learning model.
+          AI uses PPO as its learning model. A research paper has been developed based on their findings, which has been submitted to a conference, and awaits confirmation.
         </p>
         <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
           In a third project, he collaborated with @Trijay to create a secure
           HTTP server of an HTTPS server, using the SSL-TLS handshake protocol.
           They created a Certifying Authority which certified a HTTP server,
           both servers working independently.
+        </p>
+        <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
+          In a recent project, he collaborated with @Trijay and @Srijan to develop a virtual world along with its digital twin, where they created an IoT module for an experimental setup of Ohm's Law, collected data using sensors and passed the information to virtual world using a dedicated server. An incredible feat the acheived was two way communication, where they were able to control real-world objects such as voltage supply from the virtual world.
         </p>
       </section>
 

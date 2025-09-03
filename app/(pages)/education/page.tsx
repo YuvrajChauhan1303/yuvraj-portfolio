@@ -22,7 +22,7 @@ export default function Education() {
             IIIT Vadodara - ICD
           </Link>
           , pursuing a B.Tech. in Computer Science and Engineering. he has
-          completed 5 out of 8 semesters, holds a CPI of 8.03/10, and is
+          completed 6 out of 8 semesters, holds a CPI of 8.14/10 (percentage - 81.4%) , and is
           expected to graduate in July 2026.
         </p>
       </div>
@@ -67,21 +67,21 @@ export default function Education() {
         </div>
       </div>
       <div className="border-2 border-black border-dashed p-8 bg-white">
-        <h2 className="text-2xl md:text-3xl font-mono ">papers</h2>
+        <h2 className="text-2xl md:text-3xl font-mono mb-4">research work</h2>
         <div className="flex flex-col font-mono gap-6">
           <PaperItem
             number="1"
             title={
-              ' S. Sharma, T. Patel, Y. Chauhan, and S. Kumar, "Reinforcement Learning in Competitive Game Environments with Unity ML-Agents," IIIT Vadodara - International Campus Diu.'
+              ' S. Sharma, T. Patel, Y. Chauhan, G. Garg, P. Shah "Adaptive Game AI using PPO and the Impact of Hyperparameters in training of a PPO Model" IIIT Vadodara'
             }
-            link="/CS367_GAME_AI_USING_RL_REPORT_IEEE (1).pdf"
+            link="/Adaptive_Game_AI___PPO___LNCS_Format.pdf"
           />
           <PaperItem
             number="2"
             title={
-              'S. Sharma, T. Patel, Y. Chauhan, and T. Patel, "Enhanced Secret Image Sharing with Polynomial Interpolation," IIIT Vadodara - International Campus Diu.'
+              'S. Sharma, T. Patel, Y. Chauhan, and T. Patel, G. Pareek, P. B R "On (k, n) Threshold Secret Image Sharing based on Pixel Coordinates for Simple Images" IIIT Vadodara'
             }
-            link="/Design_Project_Report.pdf"
+            link="/On_Secret_Image_Sharing_based_on_Pixel_Coordinates.pdf"
           />
         </div>
       </div>

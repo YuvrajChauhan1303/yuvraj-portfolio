@@ -47,13 +47,10 @@ const MiniMenu: React.FC<MiniMenuProps> = ({ setOpen }) => {
         <Link href={"/work"} onClick={handleClose}>
           Work
         </Link>
-        <Link href={"/skills"} onClick={handleClose}>
-          Skills
-        </Link>
       </div>
 
-      <div className="pt-4 border-t-2 border-black">Connect with me:</div>
-      <div className="flex items-center justify-center w-full gap-6 mt-4">
+      {/* <div className="pt-4 border-t-2 border-black">Connect with me:</div> */}
+      <div className="flex items-center justify-center w-full gap-6 mt-4 border-t-2 border-black pt-5">
         <Link
           href={""}
           target="_blank"
@@ -96,7 +93,7 @@ const MiniMenu: React.FC<MiniMenuProps> = ({ setOpen }) => {
         className="pt-4 border-t-2 border-black"
         onClick={handleClose}
       >
-        Go Back
+        Go Home
       </Link>
     </div>
   );
