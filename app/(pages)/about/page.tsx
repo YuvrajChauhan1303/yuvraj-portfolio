@@ -1,11 +1,11 @@
 // import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ProjectCard from "./_components/ProjectCard";
-import { projectData } from "@/app/_data/aboutData";
+
+
 import {
   FaCode,
-  FaProjectDiagram,
+  
   FaTools,
   FaRegLightbulb,
   FaChess,
@@ -219,7 +219,7 @@ export default function About() {
           both servers working independently.
         </p>
         <p className="text-sm sm:text-base text-gray-700 font-mono mt-4 leading-relaxed max-w-4xl">
-          In a recent project, he collaborated with @Trijay and @Srijan to develop a virtual world along with its digital twin, where they created an IoT module for an experimental setup of Ohm's Law, collected data using sensors and passed the information to virtual world using a dedicated server. An incredible feat the acheived was two way communication, where they were able to control real-world objects such as voltage supply from the virtual world.
+          In a recent project, he collaborated with @Trijay and @Srijan to develop a virtual world along with its digital twin, where they created an IoT module for an experimental setup of Ohm&apos;s Law, collected data using sensors and passed the information to virtual world using a dedicated server. An incredible feat the acheived was two way communication, where they were able to control real-world objects such as voltage supply from the virtual world.
         </p>
       </section>
 
