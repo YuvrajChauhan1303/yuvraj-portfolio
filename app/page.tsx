@@ -108,7 +108,7 @@ export default function Home() {
         ref={workRef}
       >
         <h1 className="text-center text-4xl font-mono mt-12 mb-4">
-          relevant works / experience
+           experience
         </h1>
         <div className="min-h-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-20 p-6 justify-items-center">
           {workData.map((work, index) => (
@@ -120,7 +120,7 @@ export default function Home() {
       {/* skills */}
       <div className="flex flex-col">
         <h1 className="text-center text-4xl font-mono mt-12 mb-4">
-          relevant skills
+           skills
         </h1>
         <div className="overflow-x-hidden">
           <Skill title="tools & technologies" items={toolData} />
